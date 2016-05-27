@@ -4,11 +4,28 @@
     <title>Jekyll Example</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://fbs70.github.io/</link>
-    <atom:link href="http://fbs70.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 May 2016 19:30:03 -0500</pubDate>
-    <lastBuildDate>Thu, 26 May 2016 19:30:03 -0500</lastBuildDate>
+    <link>http://fbs70.github.io/jekyll-example/</link>
+    <atom:link href="http://fbs70.github.io/jekyll-example/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 27 May 2016 09:19:26 -0500</pubDate>
+    <lastBuildDate>Fri, 27 May 2016 09:19:26 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Testing with Brad</title>
+        <description>&lt;p&gt;This is a test page to show Brad some stuff&lt;/p&gt;
+</description>
+        <pubDate>Fri, 27 May 2016 08:09:21 -0500</pubDate>
+        <link>http://fbs70.github.io/jekyll-example/jekyll/update/testing/2016/05/27/testing-with-brad.html</link>
+        <guid isPermaLink="true">http://fbs70.github.io/jekyll-example/jekyll/update/testing/2016/05/27/testing-with-brad.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+        <category>testing</category>
+        
+      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>
@@ -28,8 +45,8 @@
 
 </description>
         <pubDate>Thu, 26 May 2016 16:09:21 -0500</pubDate>
-        <link>http://fbs70.github.io/jekyll/update/2016/05/26/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://fbs70.github.io/jekyll/update/2016/05/26/welcome-to-jekyll.html</guid>
+        <link>http://fbs70.github.io/jekyll-example/jekyll/update/2016/05/26/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://fbs70.github.io/jekyll-example/jekyll/update/2016/05/26/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
@@ -81,8 +98,8 @@ Add bucket policy&lt;/p&gt;
 &lt;p&gt;add bower and grunt to Jekyll http://www.aymerick.com/2014/07/22/jekyll-github-pages-bower-bootstrap.html&lt;/p&gt;
 </description>
         <pubDate>Wed, 25 May 2016 13:19:21 -0500</pubDate>
-        <link>http://fbs70.github.io/aws/s3/2016/05/25/setting-up-aws.html</link>
-        <guid isPermaLink="true">http://fbs70.github.io/aws/s3/2016/05/25/setting-up-aws.html</guid>
+        <link>http://fbs70.github.io/jekyll-example/aws/s3/2016/05/25/setting-up-aws.html</link>
+        <guid isPermaLink="true">http://fbs70.github.io/jekyll-example/aws/s3/2016/05/25/setting-up-aws.html</guid>
         
         
         <category>AWS</category>
