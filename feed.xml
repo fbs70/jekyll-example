@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
+    <title>Jekyll Example</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://fbs70.github.io/jekyll-example/</link>
-    <atom:link href="http://fbs70.github.io/jekyll-example/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 May 2016 17:49:58 -0500</pubDate>
-    <lastBuildDate>Thu, 26 May 2016 17:49:58 -0500</lastBuildDate>
+    <link>http://fbs70.github.io/</link>
+    <atom:link href="http://fbs70.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 26 May 2016 19:30:03 -0500</pubDate>
+    <lastBuildDate>Thu, 26 May 2016 19:30:03 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -28,13 +28,66 @@
 
 </description>
         <pubDate>Thu, 26 May 2016 16:09:21 -0500</pubDate>
-        <link>http://fbs70.github.io/jekyll-example/jekyll/update/2016/05/26/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://fbs70.github.io/jekyll-example/jekyll/update/2016/05/26/welcome-to-jekyll.html</guid>
+        <link>http://fbs70.github.io/jekyll/update/2016/05/26/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://fbs70.github.io/jekyll/update/2016/05/26/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Setting up AWS </title>
+        <description>&lt;p&gt;Setting up AWS for static website hosting.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;layout: post
+title:  Hosting a static website on AWS
+—
+I’ve decided that I want to host my personal STATIC websites on AWS.&lt;/p&gt;
+
+&lt;p&gt;I’m going to use Jekyll(www.jekyllrb.com) as my static site generator.&lt;/p&gt;
+
+&lt;p&gt;I followed this step by step guide http://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html&lt;/p&gt;
+
+&lt;p&gt;I bought my domain through http://www.namecheap.com&lt;/p&gt;
+
+&lt;p&gt;Creating buckets http://docs.aws.amazon.com/AmazonS3/latest/UG/CreatingaBucket.html&lt;/p&gt;
+
+&lt;p&gt;Uploading object to bucket http://docs.aws.amazon.com/AmazonS3/latest/UG/UploadingObjectsintoAmazonS3.html&lt;/p&gt;
+
+&lt;p&gt;Edit bucket permissions http://docs.aws.amazon.com/AmazonS3/latest/UG/EditingBucketPermissions.html
+Add bucket policy&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;Version&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2012-10-17&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;Statement&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;Sid&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;AddPerm&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;Effect&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Allow&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;Principal&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;Action&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;s3:GetObject&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;Resource&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;arn:aws:s3:::learnstem.tech/*&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;learnstem.tech Endpoint: learnstem.tech.s3-website-us-west-2.amazonaws.com&lt;/p&gt;
+
+&lt;p&gt;Configure bucket for website Hosting http://docs.aws.amazon.com/AmazonS3/latest/UG/ConfiguringBucketWebsite.html&lt;/p&gt;
+
+&lt;p&gt;add bower and grunt to Jekyll http://www.aymerick.com/2014/07/22/jekyll-github-pages-bower-bootstrap.html&lt;/p&gt;
+</description>
+        <pubDate>Wed, 25 May 2016 13:19:21 -0500</pubDate>
+        <link>http://fbs70.github.io/aws/s3/2016/05/25/setting-up-aws.html</link>
+        <guid isPermaLink="true">http://fbs70.github.io/aws/s3/2016/05/25/setting-up-aws.html</guid>
+        
+        
+        <category>AWS</category>
+        
+        <category>S3</category>
         
       </item>
     
