@@ -1,0 +1,21 @@
+{
+  "name": "jekyll-example",
+  "homepage": "https://github.com/fbs70/jekyll-example",
+  "authors": [
+    "Blair Shotlow <blair.shotlow@gmail.com>"
+  ],
+  "description": "Jekyll setup example",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
